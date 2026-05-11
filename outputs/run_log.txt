@@ -1,0 +1,37 @@
+Running MapReduce Job 1: Request Count by Service
+
+real	0m0.151s
+user	0m0.170s
+sys	0m0.000s
+Running MapReduce Job 2: Server Error Count by Service
+
+real	0m0.128s
+user	0m0.134s
+sys	0m0.009s
+Running MapReduce Job 3: Top 10 Slow Endpoints
+
+real	0m0.134s
+user	0m0.126s
+sys	0m0.024s
+Running Ray Degraded Service Detection
+2026-05-11 12:21:30,741	INFO worker.py:2012 -- Started a local Ray instance.
+/root/cloud-log-analytics-mapreduce-ray/venv/lib64/python3.9/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+search-service,high slow request rate
+search-service,repeated timeout errors
+order-service,repeated timeout errors
+payment-service,high slow request rate
+payment-service,high server error rate
+payment-service,repeated timeout errors
+notification-service,repeated timeout errors
+auth-service,repeated timeout errors
+Ray execution time: 2.1956 seconds
+
+real	0m4.268s
+user	0m1.361s
+sys	0m0.282s
+All tasks completed. Outputs are stored in outputs/.
+
+real	0m4.684s
+user	0m1.795s
+sys	0m0.315s
