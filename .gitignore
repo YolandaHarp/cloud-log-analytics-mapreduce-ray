@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+
+# AWS / credentials
+.aws/
+*.pem
+*.key
+*.env
+credentials
+config
+
+# Large or local dataset
+data/*.csv
+
+# Optional local logs
+*.log
